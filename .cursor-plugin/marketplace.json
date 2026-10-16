@@ -1,0 +1,14 @@
+{
+  "name": "sdlc-copilot-plugin",
+  "owner": {
+    "name": "Vinay Kumar Singh",
+    "email": "vksingh.knit@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "sdlc-copilot",
+      "source": "plugins/sdlc-copilot",
+      "description": "AI-assisted SDLC skills: raw idea to signed-off PRD, architecture, design, plan, code, tests, and deployment — one gated phase at a time."
+    }
+  ]
+}

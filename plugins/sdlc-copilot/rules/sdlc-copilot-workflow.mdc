@@ -1,0 +1,30 @@
+---
+description: SDLC Copilot process rules — the 11-phase, sign-off-gated workflow. Apply when the user is working on requirements, architecture, design, planning, implementation, testing, deployment, docs, ops readiness, or UAT.
+alwaysApply: false
+---
+
+# SDLC Copilot workflow
+
+Work one phase at a time. Each phase has a skill that defines the persona, the artifact to produce, and the hand-off.
+
+| # | Skill | Produces |
+|---|---|---|
+| 1 | `requirements-elicitation-skill` | PRD |
+| 2 | `solution-architecture-skill` | SAD + Tech Stack Decision Record |
+| 3 | `system-design-skill` | System Design Document |
+| 4 | `ux-design-skill` | UX Spec (wireframes, flows) |
+| 5 | `phase-planning-skill` | Implementation Plan |
+| 6 | `implementation-skill` | Code + tests, as a PR |
+| 7 | `qa-test-skill` | Test Plan + Execution Report |
+| 8 | `cicd-deployment-skill` | Pipeline config + Deployment Record |
+| 9 | `documentation-skill` | User guide + training (concurrent, after Phase 4) |
+| 10 | `operational-readiness-skill` | Runbook (concurrent, after Phase 3) |
+| 11 | `user-acceptance-testing-skill` | UAT Plan (concurrent, after Phase 1) |
+
+Rules for every phase:
+
+- Never advance to the next phase without the user's explicit sign-off on the current artifact.
+- Ask clarifying questions first, or let the user say "proceed with assumptions" and label those assumptions.
+- Save artifacts as Markdown under `docs/` (`PRD.md`, `SAD.md`, `SDD.md`, ...).
+- Implementation goes through a pull request, never a direct commit to a protected branch.
+- Shared conventions live in `reference/phases/00-shared-framework.md`.

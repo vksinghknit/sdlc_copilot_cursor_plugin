@@ -1,0 +1,17 @@
+{
+  "name": "sdlc-copilot",
+  "displayName": "SDLC Copilot",
+  "description": "AI-assisted SDLC skills: turn a raw idea into a signed-off PRD, architecture, design, implementation plan, code, tests, and deployment — one phase at a time, each phase adopting the right persona and gated on your explicit sign-off before handing off to the next.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Vinay Kumar Singh",
+    "email": "vksingh.knit@gmail.com"
+  },
+  "homepage": "https://github.com/vksinghknit/sdlc-copilot-plugin",
+  "repository": "https://github.com/vksinghknit/sdlc-copilot-plugin",
+  "license": "MIT",
+  "keywords": ["sdlc", "requirements", "architecture", "system-design", "ux", "planning", "qa", "cicd", "documentation"],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "commands": "./commands/"
+}
